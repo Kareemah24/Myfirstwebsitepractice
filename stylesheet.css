@@ -1,0 +1,197 @@
+.logo{   
+    border-radius: 50%;
+    display: inline-block;
+    border: 1px solid maroon;
+    transition: 0.3s;
+    } 
+* {
+    box-sizing: border-box;
+    }
+
+a.logo:hover {
+    box-shadow: 0 0 2px 1px rgba (0, 140, 186, 0.5);
+    }
+body {
+    background-color: linen;
+    }
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 8px;
+    top: 10;
+    width:100%;
+    }
+#nav ul li{
+    display: inline;
+    }
+
+#nav ul li a {
+    text-decoration: none;
+    background-color: black;
+    padding: 8px;
+    color: white;
+    font: 16px;
+    cursor: pointer;
+    }
+#nav .active {
+    background-color: maroon;
+    }
+#nav a:hover:not(.active) {
+    background-color: white;
+    color: maroon;
+    }
+.tooltip {
+    position:relative;
+    display: inline-block;
+    border-top: 1px double green;
+    }
+.tooltip .hovered {
+    visibility: hidden;
+    width: 120px;
+    background-color:black;
+    color: mediumpurple;
+    text-align: center;
+    border-radius :6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 50%;
+    left: 110%;
+    opacity: 0;
+    transition: opacity 1s;
+    }
+.tooltip .hovered::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent crimson transparent transparent;
+    }
+.tooltip:hover .hovered {
+    visibility:visible;
+    background-color: crimson;
+    opacity: 1;
+    }
+
+#header {
+    background-color: white; 
+    color: maroon; 
+    text-align:center;
+    padding:10px;	
+    text-decoration: none;
+    }
+#section {
+    border: 2px solid black;
+    padding: 10px;
+    }
+.sweet_peppers {
+    float: right;
+    width: 180px;
+    padding: 15px;
+    border: 1px hidden black;
+    text-align: center;
+    margin: 0 0 15px 20px;
+    }
+#Hey {
+    width: 500px;
+    padding: 5px;
+    }
+
+
+.articleheading {
+    background-color:darkorange;
+    padding: 2px 4px;
+    text-align: center;
+    border: 1px outset darkorange;
+    border-radius: 20px;
+    }
+
+.container {
+    position: relative;
+    }
+.tinted_logo {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 30px;
+    }
+.container img { 
+    opacity: 0.3;
+    }
+#footer{
+    background-color: dimgray;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    }
+.footer {
+    color:black;
+    background-color:lightgray;
+    text-align: center;
+    }
+#our_values {
+    height: 70px;
+    background: -webkit-linear-gradient(left, orangered, gold); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, orangered, gold); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, orangered, gold); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, orangered, gold); /* Standard syntax (must be last) */
+    }
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    }
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    margin: 0 4px;
+    font-size: 20;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: border .3s;
+    }
+
+ul.pagination li a.active {
+    background-color: maroon;
+    color: white;
+    border-radius: 5px;
+    }
+
+ul.pagination li a:hover:not(.active) {             
+    border: 0.4px solid maroon;
+    color: maroon;
+    }
+.pagination li:first-child a {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    }
+.pagination li:last-child a {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    }
+div.center {
+    text-align: center;
+}
+
+
+<!-- problem area starts here -->
+#header {
+    border: 1px solid red;
+    padding: 15px;
+    }
+#section {
+    width: 75%;
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+<!-- problem area ends here -->
